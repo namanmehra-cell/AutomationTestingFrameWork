@@ -20,6 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -44,12 +45,15 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream("D:\\Automation testing\\demo\\src\\main\\java\\com\\resources\\GlobalData.properties");
 		prop.load(fis);
 		
-		String browserName = prop.getProperty("browser");
+		String browserName =System.getProperty("browser")!=null?System.getProperty("browser"): prop.getProperty("browser");
 		
 
 		if (browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--remote-allow-origins=*");
+			//ChromeDriver driver = new ChromeDriver(options);
+			System.setProperty("webdriver.chrome.driver", "D:\\Automation testing\\demo\\Drivers\\chromedriver.exe");
+			driver = new ChromeDriver(options);
 
 		} else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -57,8 +61,10 @@ public class BaseTest {
 			// Firefox
 		} else if (browserName.equals("msedge")) {
 			// Edge
+			EdgeOptions options = new EdgeOptions();
+			options.addArguments("--remote-allow-origins=*");
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			driver = new EdgeDriver(options);
 		}
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

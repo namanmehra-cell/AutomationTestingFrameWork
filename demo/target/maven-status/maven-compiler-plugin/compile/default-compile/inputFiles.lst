@@ -1,8 +1,8 @@
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/pageobjects/CheckoutPage.java
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/pageobjects/CartPage.java
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/pageobjects/OrderPage.java
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/AbstractComponents/AbstractComponent.java
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/pageobjects/ConfirmationPage.java
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/resources/ExtentReporterNG.java
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/pageobjects/ProductCatalogue.java
-/Users/rahulshetty/workingcode/SeleniumFrameworkDesign/src/main/java/rahulshettyacademy/pageobjects/LandingPage.java
+D:\Automation testing\demo\src\main\java\com\pageobjects\LandingPage.java
+D:\Automation testing\demo\src\main\java\com\pageobjects\ProductCatalogue.java
+D:\Automation testing\demo\src\main\java\com\pageobjects\CheckoutPage.java
+D:\Automation testing\demo\src\main\java\com\pageobjects\OrderPage.java
+D:\Automation testing\demo\src\main\java\com\resources\ExtendReporter.java
+D:\Automation testing\demo\src\main\java\com\AbstractComponents\AbstractComponent.java
+D:\Automation testing\demo\src\main\java\com\pageobjects\ConfirmationPage.java
+D:\Automation testing\demo\src\main\java\com\pageobjects\CartPage.java
